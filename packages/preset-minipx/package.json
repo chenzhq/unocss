@@ -1,5 +1,5 @@
 {
-  "name": "@zhemu/unocss-preset-minipx",
+  "name": "@zhmu/unocss-preset-minipx",
   "version": "0.1.0",
   "description": "Fork from @unocss/preset-mini, change default unit to px.",
   "keywords": [
