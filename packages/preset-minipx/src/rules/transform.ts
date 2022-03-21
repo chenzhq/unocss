@@ -102,7 +102,7 @@ export const transforms: Rule[] = [
 ]
 
 function handleTranslate([, d, b]: string[], { theme }: RuleContext<Theme>): CSSValues | undefined {
-  const v = theme.spacing?.[b] ?? h.bracket.cssvar.fraction.px(b)
+  const v = theme.spacing?.[b] ?? h.bracket.cssvar.fraction.px4(b)
   if (v != null) {
     return [
       transformBase,

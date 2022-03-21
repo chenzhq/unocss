@@ -309,12 +309,9 @@ importers:
 
   packages/preset-minipx:
     specifiers:
-      '@unocss/core': ^0.1.0
-      unbuild: ^0.7.0
+      '@unocss/core': ^0.29.5
     dependencies:
-      '@unocss/core': 0.1.5
-    devDependencies:
-      unbuild: 0.7.0
+      '@unocss/core': link:../core
 
   packages/preset-typography:
     specifiers:
@@ -350,8 +347,8 @@ importers:
 
   packages/preset-windpx:
     specifiers:
-      '@unocss/core': workspace:*
-      '@zhmu/unocss-preset-minipx': workspace:*
+      '@unocss/core': ^0.29.5
+      '@zhmu/unocss-preset-minipx': ^0.1.0
     dependencies:
       '@unocss/core': link:../core
       '@zhmu/unocss-preset-minipx': link:../preset-minipx
@@ -1505,10 +1502,6 @@ packages:
       '@typescript-eslint/types': 5.15.0
       eslint-visitor-keys: 3.3.0
     dev: true
-
-  /@unocss/core/0.1.5:
-    resolution: {integrity: sha512-tPdkS39qGSFKBVYT5tZ+o3yrQiLvRIjrTpuhKjJZRpeNwK/XGmLzYsD4jSOSi1YFK3rtVVfeoRhtQxHHobKOWA==}
-    dev: false
 
   /@vitejs/plugin-vue/2.2.4_vite@2.8.6+vue@3.2.31:
     resolution: {integrity: sha512-ev9AOlp0ljCaDkFZF3JwC/pD2N4Hh+r5srl5JHM6BKg5+99jiiK0rE/XaRs3pVm1wzyKkjUy/StBSoXX5fFzcw==}

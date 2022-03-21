@@ -1,20 +1,20 @@
 {
   "name": "@zhmu/unocss-preset-minipx",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Fork from @unocss/preset-mini, change default unit to px.",
   "keywords": [
     "unocss",
     "unocss-preset"
   ],
-  "homepage": "https://github.com/chenzhq/unocss/tree/main/packages/preset-minipx#readme",
+  "homepage": "https://github.com/chenzhq/unocss/tree/zhmu/preset-px/packages/preset-minipx",
   "license": "MIT",
   "author": "Zhmu <chenzheqi.czq@163.com>",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/chenzhq/unocss.git",
+    "branch": "zhmu/preset-px",
     "directory": "packages/preset-minipx"
   },
-  "funding": "https://github.com/sponsors/antfu",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -62,9 +62,6 @@
     "stub": "unbuild --stub"
   },
   "dependencies": {
-    "@unocss/core": "^0.1.0"
-  },
-  "devDependencies": {
-    "unbuild": "^0.7.0"
+    "@unocss/core": "^0.29.5"
   }
 }

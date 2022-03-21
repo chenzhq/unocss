@@ -68,6 +68,18 @@ export function px(str: string) {
     return unit ? `${round(num)}${unit}` : `${round(num)}px`
 }
 
+export function px4(str: string) {
+  if (str.match(unitOnlyRE))
+    return `1${str}`
+  const match = str.match(numberWithUnitRE)
+  if (!match)
+    return
+  const [, n, unit] = match
+  const num = parseFloat(n)
+  if (!Number.isNaN(num))
+    return unit ? `${round(num)}${unit}` : `${round(num * 4)}px`
+}
+
 export function number(str: string) {
   if (!numberRE.test(str))
     return

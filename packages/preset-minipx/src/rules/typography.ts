@@ -37,13 +37,13 @@ export const fonts: Rule<Theme>[] = [
         }
       }
 
-      return { 'font-size': h.bracketOfLength.px(s) }
+      return { 'font-size': h.bracketOfLength.px4(s) }
     },
     { autocomplete: 'text-$fontSize' },
   ],
   [/^text-size-(.+)$/, ([, s], { theme }) => {
     const themed = toArray(theme.fontSize?.[s])
-    const size = themed?.[0] ?? h.bracket.cssvar.px(s)
+    const size = themed?.[0] ?? h.bracket.cssvar.px4(s)
     if (size != null)
       return { 'font-size': size }
   }],
@@ -58,21 +58,21 @@ export const fonts: Rule<Theme>[] = [
   // leadings
   [
     /^(?:leading|lh)-(.+)$/,
-    ([, s], { theme }) => ({ 'line-height': theme.lineHeight?.[s] || h.bracket.cssvar.global.px(s) }),
+    ([, s], { theme }) => ({ 'line-height': theme.lineHeight?.[s] || h.bracket.cssvar.global.px4(s) }),
     { autocomplete: '(leading|lh)-$lineHeight' },
   ],
 
   // tracking
   [
     /^tracking-(.+)$/,
-    ([, s], { theme }) => ({ 'letter-spacing': theme.letterSpacing?.[s] || h.bracket.cssvar.global.px(s) }),
+    ([, s], { theme }) => ({ 'letter-spacing': theme.letterSpacing?.[s] || h.bracket.cssvar.global.px4(s) }),
     { autocomplete: 'tracking-$letterSpacing' },
   ],
 
   // word-spacing
   [
     /^word-spacing-(.+)$/,
-    ([, s], { theme }) => ({ 'word-spacing': theme.wordSpacing?.[s] || h.bracket.cssvar.global.px(s) }),
+    ([, s], { theme }) => ({ 'word-spacing': theme.wordSpacing?.[s] || h.bracket.cssvar.global.px4(s) }),
     { autocomplete: 'word-spacing-$wordSpacing' },
   ],
 ]
@@ -91,7 +91,7 @@ export const tabSizes: Rule<Theme>[] = [
 ]
 
 export const textIndents: Rule<Theme>[] = [
-  [/^indent(?:-(.+))?$/, ([, s], { theme }) => ({ 'text-indent': theme.textIndent?.[s || 'DEFAULT'] || h.bracket.cssvar.global.fraction.px(s) })],
+  [/^indent(?:-(.+))?$/, ([, s], { theme }) => ({ 'text-indent': theme.textIndent?.[s || 'DEFAULT'] || h.bracket.cssvar.global.fraction.px4(s) })],
 ]
 
 export const textStrokes: Rule<Theme>[] = [
