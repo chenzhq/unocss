@@ -1,0 +1,42 @@
+{
+  "name": "@zhmu/preset-windpx",
+  "version": "0.1.0",
+  "description": "Tailwind / Windi CSS compact preset for UnoCSS",
+  "keywords": [
+    "unocss",
+    "unocss-preset"
+  ],
+  "homepage": "https://github.com/chenzhq/unocss/tree/main/packages/preset-windpx#readme",
+  "license": "MIT",
+  "author": "Zhmu <chenzheqi.czq@163.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chenzhq/unocss.git",
+    "directory": "packages/preset-windpx"
+  },
+  "funding": "https://github.com/sponsors/antfu",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": "./*"
+  },
+  "files": [
+    "dist",
+    "*.css"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "dependencies": {
+    "@unocss/core": "workspace:*",
+    "@unocss/preset-mini": "workspace:*"
+  }
+}

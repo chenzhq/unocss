@@ -6,12 +6,15 @@
     "unocss",
     "unocss-preset"
   ],
+  "homepage": "https://github.com/chenzhq/unocss/tree/main/packages/preset-minipx#readme",
   "license": "MIT",
-  "author": "chenzheqi.czq@163.com",
+  "author": "Zhmu <chenzheqi.czq@163.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/chenzhq/unocss-preset-minipx.git"
+    "url": "git+https://github.com/chenzhq/unocss.git",
+    "directory": "packages/preset-minipx"
   },
+  "funding": "https://github.com/sponsors/antfu",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
