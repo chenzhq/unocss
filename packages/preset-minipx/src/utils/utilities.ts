@@ -13,7 +13,7 @@ import { directionMap } from './mappings'
  * @see {@link directionMap}
  */
 export const directionSize = (propertyPrefix: string) => ([_, direction, size]: string[], { theme }: RuleContext<Theme>): CSSEntries | undefined => {
-  const v = theme.spacing?.[size || 'DEFAULT'] ?? h.bracket.cssvar.auto.fraction.rem(size)
+  const v = theme.spacing?.[size || 'DEFAULT'] ?? h.bracket.cssvar.auto.fraction.px(size)
   if (v != null)
     return directionMap[direction].map(i => [`${propertyPrefix}${i}`, v])
 }
@@ -23,7 +23,7 @@ export const directionSize = (propertyPrefix: string) => ([_, direction, size]: 
  */
 const getThemeColor = (theme: Theme, colors: string[]) =>
   theme.colors?.[
-    colors.join('-').replace(/(-[a-z])/g, n => n.slice(1).toUpperCase())
+  colors.join('-').replace(/(-[a-z])/g, n => n.slice(1).toUpperCase())
   ]
 
 /**
