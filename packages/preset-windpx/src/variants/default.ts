@@ -1,5 +1,5 @@
 import type { Variant } from '@unocss/core'
-import { variants as miniVariants } from '@unocss/preset-mini/variants'
+import { variants as miniVariants } from '@zhmu/unocss-preset-minipx/variants'
 import type { Theme, UnoOptions } from '..'
 import { variantCombinators } from './combinators'
 import { variantColorsScheme } from './dark'

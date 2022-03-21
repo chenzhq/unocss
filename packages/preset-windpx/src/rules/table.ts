@@ -1,6 +1,6 @@
 import type { Rule } from '@unocss/core'
-import type { Theme } from '@unocss/preset-mini'
-import { handler as h } from '@unocss/preset-mini/utils'
+import type { Theme } from '@zhmu/unocss-preset-minipx'
+import { handler as h } from '@zhmu/unocss-preset-minipx/utils'
 
 export const tables: Rule<Theme>[] = [
   // displays

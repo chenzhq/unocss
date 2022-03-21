@@ -1,5 +1,5 @@
 import type { Variant } from '@unocss/core'
-import { variantMatcher, variantParentMatcher } from '@unocss/preset-mini/utils'
+import { variantMatcher, variantParentMatcher } from '@zhmu/unocss-preset-minipx/utils'
 
 export const variantColorsScheme: Variant[] = [
   variantMatcher('.dark', input => `.dark $$ ${input}`),

@@ -1,6 +1,6 @@
 import type { Rule } from '@unocss/core'
 import { CONTROL_SHORTCUT_NO_MERGE } from '@unocss/core'
-import { directionSize } from '@unocss/preset-mini/utils'
+import { directionSize } from '@zhmu/unocss-preset-minipx/utils'
 
 export const scrolls: Rule[] = [
   // snap type

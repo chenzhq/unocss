@@ -1,6 +1,6 @@
 import type { CSSEntries, Rule, RuleContext } from '@unocss/core'
-import type { Theme } from '@unocss/preset-mini'
-import { directionMap, handler as h } from '@unocss/preset-mini/utils'
+import type { Theme } from '@zhmu/unocss-preset-minipx'
+import { directionMap, handler as h } from '@zhmu/unocss-preset-minipx/utils'
 
 export const spaces: Rule[] = [
   [/^space-?([xy])-?(-?.+)$/, handlerSpace],

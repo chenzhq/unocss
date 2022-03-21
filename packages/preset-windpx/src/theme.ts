@@ -1,5 +1,5 @@
-import type { Theme } from '@unocss/preset-mini'
-import { theme as miniTheme } from '@unocss/preset-mini/theme'
+import type { Theme } from '@zhmu/unocss-preset-minipx'
+import { theme as miniTheme } from '@zhmu/unocss-preset-minipx/theme'
 
 export const theme: Theme = {
   ...miniTheme,

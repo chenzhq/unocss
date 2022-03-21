@@ -51,7 +51,7 @@ import {
   willChange,
   breaks as wordBreaks,
   zIndexes,
-} from '@unocss/preset-mini/rules'
+} from '@zhmu/unocss-preset-minipx/rules'
 import { container } from './container'
 import { backgroundStyles } from './background'
 import { filters } from './filters'

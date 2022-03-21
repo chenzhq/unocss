@@ -260,7 +260,7 @@ importers:
       '@unocss/webpack': workspace:*
       unocss: workspace:*
     dependencies:
-      '@nuxt/kit': /@nuxt/kit-edge/3.0.0-27457855.7c0b914_rollup@2.70.1+vite@2.8.6
+      '@nuxt/kit': /@nuxt/kit-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6
       '@unocss/core': link:../core
       '@unocss/preset-attributify': link:../preset-attributify
       '@unocss/preset-icons': link:../preset-icons
@@ -272,7 +272,7 @@ importers:
       '@unocss/webpack': link:../webpack
       unocss: link:../unocss
     devDependencies:
-      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-27457855.7c0b914_rollup@2.70.1+vite@2.8.6
+      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6
 
   packages/plugins-common:
     specifiers:
@@ -307,6 +307,15 @@ importers:
     dependencies:
       '@unocss/core': link:../core
 
+  packages/preset-minipx:
+    specifiers:
+      '@unocss/core': ^0.1.0
+      unbuild: ^0.7.0
+    dependencies:
+      '@unocss/core': 0.1.5
+    devDependencies:
+      unbuild: 0.7.0
+
   packages/preset-typography:
     specifiers:
       '@unocss/core': workspace:*
@@ -338,6 +347,14 @@ importers:
     dependencies:
       '@unocss/core': link:../core
       '@unocss/preset-mini': link:../preset-mini
+
+  packages/preset-windpx:
+    specifiers:
+      '@unocss/core': workspace:*
+      '@zhmu/unocss-preset-minipx': workspace:*
+    dependencies:
+      '@unocss/core': link:../core
+      '@zhmu/unocss-preset-minipx': link:../preset-minipx
 
   packages/reset:
     specifiers:
@@ -1070,12 +1087,12 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
 
-  /@nuxt/kit-edge/3.0.0-27457855.7c0b914_rollup@2.70.1+vite@2.8.6:
-    resolution: {integrity: sha512-i1h0q0Dt9Jy6EhIqSOn1c6W4yG9lV/MYH6BNw4qX27QFLo/pCL2Z52hgRh5iBMAqVdnCMCCyL+6lVON+LkCoKw==}
+  /@nuxt/kit-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6:
+    resolution: {integrity: sha512-6rYLtw80Zrw+rwQXrzxv0kNwe46hoByxnEcQS3GaXlAM/9aZfdOnCSg6qiI5NJoFcjSF+6chG6oTAk33HdUlBA==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0}
     dependencies:
-      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-27457855.7c0b914_rollup@2.70.1+vite@2.8.6
-      c12: 0.2.2
+      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6
+      c12: 0.2.3
       consola: 2.15.3
       defu: 5.0.1
       globby: 13.1.1
@@ -1100,11 +1117,11 @@ packages:
       - webpack
     dev: false
 
-  /@nuxt/schema-edge/3.0.0-27457855.7c0b914_rollup@2.70.1+vite@2.8.6:
-    resolution: {integrity: sha512-S/wTt0h0v0bTjJLBVucCfs4P+tFo+pmeEWbluaNqwj95EQ4YrtphRMWydjI2GBmbqSKPJ9DjAKwa4BAOfMJ2/A==}
+  /@nuxt/schema-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6:
+    resolution: {integrity: sha512-pSuw9uMCiuDUyzkhZuvHuRQLMIX0Hb7vGJm1u8JapFpU+juI9q8ygnS4O6NVtw89nqJ77SBO4q4n2C8umeT2IQ==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0}
     dependencies:
-      c12: 0.2.2
+      c12: 0.2.3
       create-require: 1.1.1
       defu: 5.0.1
       jiti: 1.13.0
@@ -1488,6 +1505,10 @@ packages:
       '@typescript-eslint/types': 5.15.0
       eslint-visitor-keys: 3.3.0
     dev: true
+
+  /@unocss/core/0.1.5:
+    resolution: {integrity: sha512-tPdkS39qGSFKBVYT5tZ+o3yrQiLvRIjrTpuhKjJZRpeNwK/XGmLzYsD4jSOSi1YFK3rtVVfeoRhtQxHHobKOWA==}
+    dev: false
 
   /@vitejs/plugin-vue/2.2.4_vite@2.8.6+vue@3.2.31:
     resolution: {integrity: sha512-ev9AOlp0ljCaDkFZF3JwC/pD2N4Hh+r5srl5JHM6BKg5+99jiiK0rE/XaRs3pVm1wzyKkjUy/StBSoXX5fFzcw==}
@@ -2081,8 +2102,8 @@ packages:
       load-tsconfig: 0.2.3
     dev: true
 
-  /c12/0.2.2:
-    resolution: {integrity: sha512-OzcWDDBtc7+spt0WrCJhA1Sw7bkW2Wnj+pGrtlZ/gLz1mHeEKzEErFQyTGyWvzsdDa6CewZttkHOswtwHGXjCQ==}
+  /c12/0.2.3:
+    resolution: {integrity: sha512-CzbPuf1RA+OivkqPnu7CHGVbFDBSRDVs90vRP9r77H2G8nHmA2tew5A5gcOuCf0N5/fNZVg7OMbJ0ACaiUIguw==}
     dependencies:
       defu: 5.0.1
       dotenv: 14.3.2

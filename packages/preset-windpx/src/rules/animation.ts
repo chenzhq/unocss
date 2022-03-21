@@ -1,6 +1,6 @@
 import type { Rule } from '@unocss/core'
-import { handler as h } from '@unocss/preset-mini/utils'
-import type { Theme } from '@unocss/preset-mini'
+import { handler as h } from '@zhmu/unocss-preset-minipx/utils'
+import type { Theme } from '@zhmu/unocss-preset-minipx'
 
 export const animations: Rule<Theme>[] = [
   [/^(?:animate-)?keyframes-(.+)$/, ([, name], { theme, constructCSS }) => {

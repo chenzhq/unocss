@@ -1,5 +1,5 @@
 {
-  "name": "@zhmu/preset-windpx",
+  "name": "@zhmu/unocss-preset-windpx",
   "version": "0.1.0",
   "description": "Fork from @unocss/preset-wind, change default unit to px.",
   "keywords": [
@@ -37,6 +37,6 @@
   },
   "dependencies": {
     "@unocss/core": "workspace:*",
-    "@unocss/preset-mini": "workspace:*"
+    "@zhmu/unocss-preset-minipx": "workspace:*"
   }
 }
