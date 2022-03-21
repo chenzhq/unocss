@@ -1,7 +1,7 @@
 {
   "name": "@zhmu/preset-windpx",
   "version": "0.1.0",
-  "description": "Tailwind / Windi CSS compact preset for UnoCSS",
+  "description": "Fork from @unocss/preset-wind, change default unit to px.",
   "keywords": [
     "unocss",
     "unocss-preset"
