@@ -18,7 +18,7 @@ export const tables: Rule<Theme>[] = [
   // layouts
   ['border-collapse', { 'border-collapse': 'collapse' }],
   ['border-separate', { 'border-collapse': 'separate' }],
-  [/^border-spacing-(.+)$/, ([, d], { theme }) => ({ 'border-spacing': theme.spacing?.[d] ?? h.bracket.cssvar.auto.fraction.px(d) })],
+  [/^border-spacing-(.+)$/, ([, d], { theme }) => ({ 'border-spacing': theme.spacing?.[d] ?? h.bracket.cssvar.auto.fraction.px4(d) })],
   ['caption-top', { 'caption-side': 'top' }],
   ['caption-bottom', { 'caption-side': 'bottom' }],
   ['table-auto', { 'table-layout': 'auto' }],

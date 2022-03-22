@@ -10,6 +10,8 @@ export { colors } from '@zhmu/unocss-preset-minipx'
 
 export type { Theme } from '@zhmu/unocss-preset-minipx'
 
+export type { Preset }
+
 export { rules, shortcuts, theme, variants, autocomplete }
 
 export interface UnoOptions extends PresetMiniOptions { }

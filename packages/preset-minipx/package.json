@@ -62,6 +62,6 @@
     "stub": "unbuild --stub"
   },
   "dependencies": {
-    "@unocss/core": "^0.29.5"
+    "@unocss/core": "workspace:*"
   }
 }
