@@ -30,6 +30,8 @@ export const presetMini = (options: PresetMiniOptions = {}): Preset<Theme> => {
   options.dark = options.dark ?? 'class'
   options.attributifyPseudo = options.attributifyPseudo ?? false
 
+  if (!theme.unit) theme.unit = { default: 'px4' }
+
   return {
     name: '@unocss/preset-mini',
     theme,

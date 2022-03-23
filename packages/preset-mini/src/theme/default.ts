@@ -3,6 +3,7 @@ import { fontFamily, fontSize, letterSpacing, lineHeight, textIndent, textShadow
 import { borderRadius, boxShadow, breakpoints, duration, easing, lineWidth, ringWidth, spacing, verticalBreakpoints } from './misc'
 import { blur, dropShadow } from './filters'
 import { height, maxHeight, maxWidth, width } from './size'
+import { unit } from './unit'
 import type { Theme } from './types'
 
 export * from './colors'
@@ -40,4 +41,5 @@ export const theme: Theme = {
   spacing,
   duration,
   ringWidth,
+  unit,
 }

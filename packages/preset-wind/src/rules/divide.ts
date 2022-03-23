@@ -1,6 +1,6 @@
 import type { CSSEntries, Rule, RuleContext } from '@unocss/core'
-import type { Theme } from '@unocss/preset-mini'
-import { colorResolver, directionMap, handler as h } from '@unocss/preset-mini/utils'
+import type { Theme } from '@zhmu/unocss-preset-mini'
+import { colorResolver, directionMap, handler as h } from '@zhmu/unocss-preset-mini/utils'
 
 export const divides: Rule[] = [
   // divides

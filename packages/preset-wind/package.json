@@ -1,23 +1,20 @@
 {
-  "name": "@unocss/preset-wind",
-  "version": "0.29.5",
-  "description": "Tailwind / Windi CSS compact preset for UnoCSS",
+  "name": "@zhmu/unocss-preset-wind",
+  "version": "0.1.3",
+  "description": "Fork from @unocss/preset-wind, change default unit to px.",
   "keywords": [
     "unocss",
     "unocss-preset"
   ],
-  "homepage": "https://github.com/unocss/unocss/tree/main/packages/preset-wind#readme",
-  "bugs": {
-    "url": "https://github.com/unocss/unocss/issues"
-  },
+  "homepage": "https://github.com/chenzhq/unocss/tree/zhmu/preset-px/packages/preset-wind",
   "license": "MIT",
-  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "author": "Zhmu <chenzheqi.czq@163.com>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/unocss/unocss.git",
+    "url": "git+https://github.com/chenzhq/unocss.git",
+    "branch": "zhmu/preset-px",
     "directory": "packages/preset-wind"
   },
-  "funding": "https://github.com/sponsors/antfu",
   "main": "dist/index.cjs",
   "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
@@ -40,6 +37,6 @@
   },
   "dependencies": {
     "@unocss/core": "workspace:*",
-    "@unocss/preset-mini": "workspace:*"
+    "@zhmu/unocss-preset-mini": "workspace:*"
   }
 }

@@ -1,6 +1,6 @@
 import type { Rule, RuleContext } from '@unocss/core'
-import { colorToString, handler as h, parseColor, positionMap } from '@unocss/preset-mini/utils'
-import type { Theme } from '@unocss/preset-mini'
+import { colorToString, handler as h, parseColor, positionMap } from '@zhmu/unocss-preset-mini/utils'
+import type { Theme } from '@zhmu/unocss-preset-mini'
 
 const bgGradientColorResolver = (mode: 'from' | 'to' | 'via') =>
   ([, body]: string[], { theme }: RuleContext<Theme>) => {

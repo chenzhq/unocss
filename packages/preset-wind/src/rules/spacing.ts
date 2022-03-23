@@ -1,6 +1,6 @@
 import type { CSSEntries, Rule, RuleContext } from '@unocss/core'
-import type { Theme } from '@unocss/preset-mini'
-import { directionMap, handler as h } from '@unocss/preset-mini/utils'
+import type { Theme } from '@zhmu/unocss-preset-mini'
+import { directionMap, handler as h } from '@zhmu/unocss-preset-mini/utils'
 
 export const spaces: Rule[] = [
   [/^space-?([xy])-?(-?.+)$/, handlerSpace],
@@ -10,7 +10,7 @@ export const spaces: Rule[] = [
 ]
 
 function handlerSpace([, d, s]: string[], { theme }: RuleContext<Theme>): CSSEntries | undefined {
-  const v = theme.spacing?.[s || 'DEFAULT'] ?? h.bracket.cssvar.auto.fraction.rem(s || '1')
+  const v = theme.spacing?.[s || 'DEFAULT'] ?? h.bracket.cssvar.auto.fraction[theme.unit?.default || 'rem'](s || '1')
   if (v != null) {
     const results = directionMap[d].map((item): [string, string] => {
       const key = `margin${item}`

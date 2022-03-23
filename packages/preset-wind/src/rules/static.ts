@@ -1,5 +1,5 @@
 import type { Rule } from '@unocss/core'
-import { handler as h, positionMap } from '@unocss/preset-mini/utils'
+import { handler as h, positionMap } from '@zhmu/unocss-preset-mini/utils'
 
 export const textTransforms: Rule[] = [
   // tailwind compact

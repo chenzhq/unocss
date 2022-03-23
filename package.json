@@ -88,5 +88,10 @@
     "vitest": "^0.7.0",
     "vue": "^3.2.31",
     "vue-router": "^4.0.14"
+  },
+  "pnpm": {
+    "overrides": {
+      "@unocss/preset-mini@*": "@zhmu/unocss-preset-mini@*"
+    }
   }
 }

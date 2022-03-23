@@ -1,6 +1,6 @@
 import type { Rule } from '@unocss/core'
 import { CONTROL_SHORTCUT_NO_MERGE } from '@unocss/core'
-import { varEmpty } from '@unocss/preset-mini/rules'
+import { varEmpty } from '@zhmu/unocss-preset-mini/rules'
 
 const touchActionBase = {
   '--un-pan-x': varEmpty,

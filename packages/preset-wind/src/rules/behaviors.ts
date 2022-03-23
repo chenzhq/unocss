@@ -1,5 +1,5 @@
 import type { Rule } from '@unocss/core'
-import { colorResolver, handler as h } from '@unocss/preset-mini/utils'
+import { colorResolver, handler as h } from '@zhmu/unocss-preset-mini/utils'
 
 export const listStyle: Rule[] = [
   // base

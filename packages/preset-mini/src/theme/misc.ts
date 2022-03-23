@@ -15,20 +15,20 @@ export const lineWidth = {
 }
 
 export const spacing = {
-  'DEFAULT': '1rem',
-  'none': '0rem',
-  'xs': '0.75rem',
-  'sm': '0.875rem',
-  'lg': '1.125rem',
-  'xl': '1.25rem',
-  '2xl': '1.5rem',
-  '3xl': '1.875rem',
-  '4xl': '2.25rem',
-  '5xl': '3rem',
-  '6xl': '3.75rem',
-  '7xl': '4.5rem',
-  '8xl': '6rem',
-  '9xl': '8rem',
+  'DEFAULT': '16px',
+  'none': '0',
+  'xs': '12px',
+  'sm': '14px',
+  'lg': '18px',
+  'xl': '20px',
+  '2xl': '24px',
+  '3xl': '30px',
+  '4xl': '36px',
+  '5xl': '48px',
+  '6xl': '60px',
+  '7xl': '72px',
+  '8xl': '96px',
+  '9xl': '128px',
 }
 
 export const duration = {
@@ -45,14 +45,14 @@ export const duration = {
 }
 
 export const borderRadius = {
-  'DEFAULT': '0.25rem',
-  'none': '0rem',
-  'sm': '0.125rem',
-  'md': '0.375rem',
-  'lg': '0.5rem',
-  'xl': '0.75rem',
-  '2xl': '1rem',
-  '3xl': '1.5rem',
+  'DEFAULT': '4px',
+  'none': '0',
+  'sm': '2px',
+  'md': '6px',
+  'lg': '8px',
+  'xl': '12px',
+  '2xl': '16px',
+  '3xl': '24px',
   'full': '9999px',
 }
 

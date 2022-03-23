@@ -1,5 +1,8 @@
 lockfileVersion: 5.3
 
+overrides:
+  '@unocss/preset-mini@*': '@zhmu/unocss-preset-mini@*'
+
 importers:
 
   .:
@@ -28,11 +31,9 @@ importers:
       '@unocss/extractor-pug': workspace:*
       '@unocss/preset-attributify': workspace:*
       '@unocss/preset-icons': workspace:*
-      '@unocss/preset-mini': workspace:*
       '@unocss/preset-typography': workspace:*
       '@unocss/preset-uno': workspace:*
       '@unocss/preset-web-fonts': workspace:*
-      '@unocss/preset-wind': workspace:*
       '@unocss/reset': workspace:*
       '@unocss/transformer-directives': workspace:*
       '@unocss/transformer-variant-group': workspace:*
@@ -41,6 +42,8 @@ importers:
       '@vitejs/plugin-vue': ^2.2.4
       '@vitest/ui': ^0.7.0
       '@vueuse/core': ^8.1.1
+      '@zhmu/unocss-preset-mini': workspace:*
+      '@zhmu/unocss-preset-wind': workspace:*
       brotli-size: ^4.0.0
       bumpp: ^7.1.1
       codemirror: ^5.65.2
@@ -97,11 +100,9 @@ importers:
       '@unocss/extractor-pug': link:packages/extractor-pug
       '@unocss/preset-attributify': link:packages/preset-attributify
       '@unocss/preset-icons': link:packages/preset-icons
-      '@unocss/preset-mini': link:packages/preset-mini
       '@unocss/preset-typography': link:packages/preset-typography
       '@unocss/preset-uno': link:packages/preset-uno
       '@unocss/preset-web-fonts': link:packages/preset-web-fonts
-      '@unocss/preset-wind': link:packages/preset-wind
       '@unocss/reset': link:packages/reset
       '@unocss/transformer-directives': link:packages/transformer-directives
       '@unocss/transformer-variant-group': link:packages/transformer-variant-group
@@ -110,6 +111,8 @@ importers:
       '@vitejs/plugin-vue': 2.2.4_vite@2.8.6+vue@3.2.31
       '@vitest/ui': 0.7.0
       '@vueuse/core': 8.1.1_vue@3.2.31
+      '@zhmu/unocss-preset-mini': link:packages/preset-mini
+      '@zhmu/unocss-preset-wind': link:packages/preset-wind
       brotli-size: 4.0.0
       bumpp: 7.1.1
       codemirror: 5.65.2
@@ -260,7 +263,7 @@ importers:
       '@unocss/webpack': workspace:*
       unocss: workspace:*
     dependencies:
-      '@nuxt/kit': /@nuxt/kit-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6
+      '@nuxt/kit': /@nuxt/kit-edge/3.0.0-27467464.a0c4d6e_rollup@2.70.1+vite@2.8.6
       '@unocss/core': link:../core
       '@unocss/preset-attributify': link:../preset-attributify
       '@unocss/preset-icons': link:../preset-icons
@@ -272,7 +275,7 @@ importers:
       '@unocss/webpack': link:../webpack
       unocss: link:../unocss
     devDependencies:
-      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6
+      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-27467464.a0c4d6e_rollup@2.70.1+vite@2.8.6
 
   packages/plugins-common:
     specifiers:
@@ -307,12 +310,6 @@ importers:
     dependencies:
       '@unocss/core': link:../core
 
-  packages/preset-minipx:
-    specifiers:
-      '@unocss/core': ^0.29.5
-    dependencies:
-      '@unocss/core': link:../core
-
   packages/preset-typography:
     specifiers:
       '@unocss/core': workspace:*
@@ -322,12 +319,12 @@ importers:
   packages/preset-uno:
     specifiers:
       '@unocss/core': workspace:*
-      '@unocss/preset-mini': workspace:*
-      '@unocss/preset-wind': workspace:*
+      '@zhmu/unocss-preset-mini': workspace:*
+      '@zhmu/unocss-preset-wind': workspace:*
     dependencies:
       '@unocss/core': link:../core
-      '@unocss/preset-mini': link:../preset-mini
-      '@unocss/preset-wind': link:../preset-wind
+      '@zhmu/unocss-preset-mini': link:../preset-mini
+      '@zhmu/unocss-preset-wind': link:../preset-wind
 
   packages/preset-web-fonts:
     specifiers:
@@ -340,18 +337,10 @@ importers:
   packages/preset-wind:
     specifiers:
       '@unocss/core': workspace:*
-      '@unocss/preset-mini': workspace:*
+      '@zhmu/unocss-preset-mini': workspace:*
     dependencies:
       '@unocss/core': link:../core
-      '@unocss/preset-mini': link:../preset-mini
-
-  packages/preset-windpx:
-    specifiers:
-      '@unocss/core': ^0.29.5
-      '@zhmu/unocss-preset-minipx': ^0.1.0
-    dependencies:
-      '@unocss/core': link:../core
-      '@zhmu/unocss-preset-minipx': link:../preset-minipx
+      '@zhmu/unocss-preset-mini': link:../preset-mini
 
   packages/reset:
     specifiers:
@@ -400,29 +389,29 @@ importers:
       '@unocss/core': workspace:*
       '@unocss/preset-attributify': workspace:*
       '@unocss/preset-icons': workspace:*
-      '@unocss/preset-mini': workspace:*
       '@unocss/preset-typography': workspace:*
       '@unocss/preset-uno': workspace:*
       '@unocss/preset-web-fonts': workspace:*
-      '@unocss/preset-wind': workspace:*
       '@unocss/reset': workspace:*
       '@unocss/transformer-directives': workspace:*
       '@unocss/transformer-variant-group': workspace:*
       '@unocss/vite': workspace:*
+      '@zhmu/unocss-preset-mini': workspace:*
+      '@zhmu/unocss-preset-wind': workspace:*
     dependencies:
       '@unocss/cli': link:../cli
       '@unocss/core': link:../core
       '@unocss/preset-attributify': link:../preset-attributify
       '@unocss/preset-icons': link:../preset-icons
-      '@unocss/preset-mini': link:../preset-mini
       '@unocss/preset-typography': link:../preset-typography
       '@unocss/preset-uno': link:../preset-uno
       '@unocss/preset-web-fonts': link:../preset-web-fonts
-      '@unocss/preset-wind': link:../preset-wind
       '@unocss/reset': link:../reset
       '@unocss/transformer-directives': link:../transformer-directives
       '@unocss/transformer-variant-group': link:../transformer-variant-group
       '@unocss/vite': link:../vite
+      '@zhmu/unocss-preset-mini': link:../preset-mini
+      '@zhmu/unocss-preset-wind': link:../preset-wind
 
   packages/vite:
     specifiers:
@@ -1084,14 +1073,14 @@ packages:
       '@nodelib/fs.scandir': 2.1.5
       fastq: 1.13.0
 
-  /@nuxt/kit-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6:
-    resolution: {integrity: sha512-6rYLtw80Zrw+rwQXrzxv0kNwe46hoByxnEcQS3GaXlAM/9aZfdOnCSg6qiI5NJoFcjSF+6chG6oTAk33HdUlBA==}
+  /@nuxt/kit-edge/3.0.0-27467464.a0c4d6e_rollup@2.70.1+vite@2.8.6:
+    resolution: {integrity: sha512-KVGTkqn3D8dpa6mznsGYYHxmMivVJDqGLfoPAUrrxGxBoR357D6k2XiEM6LfJJQPdILBWks6W648SC6FU2vJ6w==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0}
     dependencies:
-      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6
-      c12: 0.2.3
+      '@nuxt/schema': /@nuxt/schema-edge/3.0.0-27467464.a0c4d6e_rollup@2.70.1+vite@2.8.6
+      c12: 0.2.4
       consola: 2.15.3
-      defu: 5.0.1
+      defu: 6.0.0
       globby: 13.1.1
       hash-sum: 2.0.0
       ignore: 5.2.0
@@ -1103,8 +1092,8 @@ packages:
       pkg-types: 0.3.2
       scule: 0.2.1
       semver: 7.3.5
-      unctx: 1.0.2
-      unimport: 0.1.0_rollup@2.70.1+vite@2.8.6
+      unctx: 1.1.0_rollup@2.70.1+vite@2.8.6
+      unimport: 0.1.2_rollup@2.70.1+vite@2.8.6
       untyped: 0.4.3
     transitivePeerDependencies:
       - esbuild
@@ -1114,20 +1103,20 @@ packages:
       - webpack
     dev: false
 
-  /@nuxt/schema-edge/3.0.0-27460489.53fbca7_rollup@2.70.1+vite@2.8.6:
-    resolution: {integrity: sha512-pSuw9uMCiuDUyzkhZuvHuRQLMIX0Hb7vGJm1u8JapFpU+juI9q8ygnS4O6NVtw89nqJ77SBO4q4n2C8umeT2IQ==}
+  /@nuxt/schema-edge/3.0.0-27467464.a0c4d6e_rollup@2.70.1+vite@2.8.6:
+    resolution: {integrity: sha512-E9Cl7IjGquJrHYW9FQ8cLf+7UGlGg1FEP+pu6eLWHiKocsdBmyCcZrKn5RFxISikU3jJYvmykX7qf0OapFN5vw==}
     engines: {node: ^14.16.0 || ^16.11.0 || ^17.0.0}
     dependencies:
-      c12: 0.2.3
+      c12: 0.2.4
       create-require: 1.1.1
-      defu: 5.0.1
+      defu: 6.0.0
       jiti: 1.13.0
       pathe: 0.2.0
       postcss-import-resolver: 2.0.0
       scule: 0.2.1
       std-env: 3.0.1
       ufo: 0.8.1
-      unimport: 0.1.0_rollup@2.70.1+vite@2.8.6
+      unimport: 0.1.2_rollup@2.70.1+vite@2.8.6
     transitivePeerDependencies:
       - esbuild
       - rollup
@@ -1825,7 +1814,6 @@ packages:
     resolution: {integrity: sha512-V/LGr1APy+PXIwKebEWrkZPwoeoF+w1jiOBUmuxuiUIaOHtob8Qc9BTrYo7VuI5fR8tqsy+buA2WFooR5olqvQ==}
     engines: {node: '>=0.4.0'}
     hasBin: true
-    dev: true
 
   /ajv-keywords/3.5.2_ajv@6.12.6:
     resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==}
@@ -2095,8 +2083,8 @@ packages:
       load-tsconfig: 0.2.3
     dev: true
 
-  /c12/0.2.3:
-    resolution: {integrity: sha512-CzbPuf1RA+OivkqPnu7CHGVbFDBSRDVs90vRP9r77H2G8nHmA2tew5A5gcOuCf0N5/fNZVg7OMbJ0ACaiUIguw==}
+  /c12/0.2.4:
+    resolution: {integrity: sha512-xI2RSKS+DFzR7tMnRv7QtVO6W716PVDzAXVPpAM/NsMZbqQ17jpqcKhTmNF9X/WpeNvo6wOdFViS1GRUF7Qyrg==}
     dependencies:
       defu: 5.0.1
       dotenv: 14.3.2
@@ -2464,6 +2452,9 @@ packages:
 
   /defu/5.0.1:
     resolution: {integrity: sha512-EPS1carKg+dkEVy3qNTqIdp2qV7mUP08nIsupfwQpz++slCVRw7qbQyWvSTig+kFPwz2XXp5/kIIkH+CwrJKkQ==}
+
+  /defu/6.0.0:
+    resolution: {integrity: sha512-t2MZGLf1V2rV4VBZbWIaXKdX/mUcYW0n2znQZoADBkGGxYL8EWqCuCZBmJPJ/Yy9fofJkyuuSuo5GSwo0XdEgw==}
 
   /destr/1.1.0:
     resolution: {integrity: sha512-Ev/sqS5AzzDwlpor/5wFCDu0dYMQu/0x2D6XfAsQ0E7uQmamIgYJ6Dppo2T2EOFVkeVYWjc+PCLKaqZZ57qmLg==}
@@ -5818,12 +5809,22 @@ packages:
       - sass
       - stylus
 
-  /unctx/1.0.2:
-    resolution: {integrity: sha512-qxRfnQZWJqkg180JeOCJEvtjj5/7wnWVqkNHln8muY5/z8kMWBFqikFBPwIPCQrZJ+jtaSWkVHJkuHUAXls6zw==}
+  /unctx/1.1.0_rollup@2.70.1+vite@2.8.6:
+    resolution: {integrity: sha512-Ae6vlXs1HC5Sg4PS1aNm8o9vqLonziZzGQ9m8Yiwvlan2CCwkOsdJXiiTmkjWqKn98PhJrpp8CGKfzA0tLuoZA==}
+    dependencies:
+      acorn: 8.7.0
+      estree-walker: 2.0.2
+      magic-string: 0.26.1
+      unplugin: 0.5.2_rollup@2.70.1+vite@2.8.6
+    transitivePeerDependencies:
+      - esbuild
+      - rollup
+      - vite
+      - webpack
     dev: false
 
-  /unimport/0.1.0_rollup@2.70.1+vite@2.8.6:
-    resolution: {integrity: sha512-GqMgP1Mj8YYD+9I3MK/Ca/oeoCS0HdmCc/O1IW0si85RgXgPKYIoK84XbMVwOl9Qv/XGfZa/F5JagTWGtMOXCw==}
+  /unimport/0.1.2_rollup@2.70.1+vite@2.8.6:
+    resolution: {integrity: sha512-1MTVh/DP8NTyrzsOGp6GaHLKuDWdh4RQbc1gSncbzZ7ttWpIJD9e330MKCCoXe6LkUoLNELmyYUVlk0F0Hwvow==}
     dependencies:
       '@rollup/pluginutils': 4.2.0
       escape-string-regexp: 5.0.0
@@ -5971,6 +5972,30 @@ packages:
       rollup: 2.70.1
       vite: 2.8.6
       webpack: 5.70.0
+      webpack-sources: 3.2.3
+      webpack-virtual-modules: 0.4.3
+    dev: false
+
+  /unplugin/0.5.2_rollup@2.70.1+vite@2.8.6:
+    resolution: {integrity: sha512-3SPYtus/56cxyD4jfjrnqCvb6jPxvdqJNaRXnEaG2BhNEMaoygu/39AG+LwKmiIUzj4XHyitcfZ7scGlWfEigA==}
+    peerDependencies:
+      esbuild: '>=0.13'
+      rollup: ^2.50.0
+      vite: ^2.3.0
+      webpack: 4 || 5
+    peerDependenciesMeta:
+      esbuild:
+        optional: true
+      rollup:
+        optional: true
+      vite:
+        optional: true
+      webpack:
+        optional: true
+    dependencies:
+      chokidar: 3.5.3
+      rollup: 2.70.1
+      vite: 2.8.6
       webpack-sources: 3.2.3
       webpack-virtual-modules: 0.4.3
     dev: false

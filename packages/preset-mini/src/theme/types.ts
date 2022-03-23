@@ -51,4 +51,5 @@ export interface Theme {
   gridRow?: Record<string, string>
   gridTemplateColumn?: Record<string, string>
   gridTemplateRow?: Record<string, string>
+  unit?: { default: 'rem' | 'px' | 'px4' }
 }
