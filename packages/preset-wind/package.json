@@ -1,6 +1,6 @@
 {
   "name": "@zhmu/unocss-preset-wind",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Fork from @unocss/preset-wind, change default unit to px.",
   "keywords": [
     "unocss",
