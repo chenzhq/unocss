@@ -4,7 +4,6 @@ import { rules } from './rules'
 import { shortcuts } from './shortcuts'
 import { theme } from './theme'
 import { variants } from './variants'
-import { autocomplete } from './autocomplete'
 
 export { colors } from '@zhmu/unocss-preset-mini'
 
@@ -12,7 +11,7 @@ export type { Theme } from '@zhmu/unocss-preset-mini'
 
 export type { Preset }
 
-export { rules, shortcuts, theme, variants, autocomplete }
+export { rules, shortcuts, theme, variants }
 
 export interface UnoOptions extends PresetMiniOptions { }
 
@@ -27,7 +26,6 @@ export const presetWind = (options: UnoOptions = {}): Preset<Theme> => {
     shortcuts,
     variants: variants(options),
     options,
-    autocomplete,
   }
 }
 
